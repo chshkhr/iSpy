@@ -134,8 +134,9 @@ namespace iSpyApplication
                         }
                     }
                 }
-                if (j > 0 && msg!="NOK")
-                    MessageBox.Show(this, LocRm.GetString("MediaArchivedTo") +Environment.NewLine+ msg);
+                if (j > 0 && msg != "NOK")
+                    //vc    MessageBox.Show(this, LocRm.GetString("MediaArchivedTo") +Environment.NewLine+ msg);
+                    tsslMonitor.Text = LocRm.GetString("MediaArchivedTo") + Environment.NewLine + msg;
             }
 
         }
@@ -459,8 +460,9 @@ namespace iSpyApplication
                 }
             }
             if (msg != "")
-                MessageBox.Show(this, LocRm.GetString(msg));
-            
+                //vc    MessageBox.Show(this, LocRm.GetString(msg));
+                tsslMonitor.Text = LocRm.GetString(msg);
+
         }
 
         //internal void MediaUploadYouTube()
