@@ -136,7 +136,7 @@ namespace iSpyApplication
                 }
                 if (j > 0 && msg != "NOK")
                     //vc    MessageBox.Show(this, LocRm.GetString("MediaArchivedTo") +Environment.NewLine+ msg);
-                    tsslMonitor.Text = LocRm.GetString("MediaArchivedTo") + Environment.NewLine + msg;
+                    tsslMediaInfo.Text = LocRm.GetString("MediaArchivedTo") + " " + msg;
             }
 
         }
@@ -461,7 +461,7 @@ namespace iSpyApplication
             }
             if (msg != "")
                 //vc    MessageBox.Show(this, LocRm.GetString(msg));
-                tsslMonitor.Text = LocRm.GetString(msg);
+                tsslMediaInfo.Text = LocRm.GetString(msg);
 
         }
 
