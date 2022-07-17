@@ -437,6 +437,7 @@ namespace iSpyApplication
 
         internal void MediaUploadCloud()
         {
+            Conf.Subscribed = true; //vc
             if (!Conf.Subscribed)
             {
                 var ns = new NotSubscribed();
